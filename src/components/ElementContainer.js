@@ -8,14 +8,16 @@ class ElementContainer extends React.Component {
         super()
         this.state = {
             elements: periodicTable.elements,
-            randomElement: periodicTable.elements[0]
+            randomElement: periodicTable.elements[0],
+            length: periodicTable.elements.length
         }
         this.handleClick = this.handleClick.bind(this)
         // this.generateRandomElement = this.randomElement.bind(this)
     }
 
     handleClick() {
-
+        const randomNumber = Math.floor(Math.random() * this.state.length)
+        this.setState({ randomElement: this.state.elements[randomNumber] })
     }
 
     generateRandomElement() {

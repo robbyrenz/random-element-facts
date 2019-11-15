@@ -31,3 +31,19 @@ body {
 	margin: auto;
 	padding: 15px;
 }
+
+button {
+	width: 90%;
+	background: burlywood;
+	border: 5px solid whitesmoke;
+	border-radius: 15px;
+	padding: 5px;
+	margin: 5px;
+	font-size: 1.5em;
+	color: black;
+	text-transform: uppercase;
+}
+
+button:hover {
+	cursor: pointer;
+}

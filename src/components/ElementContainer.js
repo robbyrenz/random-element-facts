@@ -4,12 +4,14 @@ import periodicTable from "../data/periodic_table.json"
 import Element from "./Element"
 
 class ElementContainer extends React.Component {
-    constructor(props) {
-        super(props)
+    constructor() {
+        super()
         this.state = {
-            elements: periodicTable.elements
+            elements: periodicTable.elements,
+            randomElement: periodicTable.elements[0]
         }
         this.handleClick = this.handleClick.bind(this)
+        // this.generateRandomElement = this.randomElement.bind(this)
     }
 
     handleClick() {
@@ -25,12 +27,16 @@ class ElementContainer extends React.Component {
         }
     }
 
+    generateRandomElement() {
+
+    }
+
     render() {
         return (
-            <div>
+            <div className="container">
                 <h1>{this.props.greetings}</h1>
-                <button onClick={this.handleClick}>Click me!</button>
-                <Element element={this.state.elements[0]} />
+                <Element element={this.state.randomElement} />
+                <button onClick={this.handleClick}>Randomize!</button>
             </div>
         )
     }

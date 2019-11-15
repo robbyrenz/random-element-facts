@@ -1,12 +1,13 @@
 import React from "react"
 
 import ElementContainer from "./components/ElementContainer"
+import Header from "./components/Header"
 
 function App() {
 	return (
 		<div>
-			<h1>Hello World!</h1>
-			<ElementContainer greetings={"Hi there!"}/>
+			<Header heading={"Random Element Facts"} />
+			<ElementContainer />
 		</div>
 	)
 }

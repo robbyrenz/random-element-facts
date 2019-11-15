@@ -7,7 +7,7 @@
 body {
 	/* background: black;
 	color: whitesmoke; */
-	background: whitesmoke;
+	background: burlywood;
 	color: black;
 	font-family: 'Times New Roman';
 	padding: 1em;
@@ -25,4 +25,9 @@ body {
 	justify-content: center;
 	align-items: center;
 	height: 70vh;
+	width: 50vw;
+	border: 20px solid whitesmoke;
+	border-radius: 20px;
+	margin: auto;
+	padding: 15px;
 }

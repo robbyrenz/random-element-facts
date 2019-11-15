@@ -24,7 +24,7 @@ class ElementContainer extends React.Component {
 
     render() {
         return (
-            <div className="container">
+            <div>
                 <Element 
                     element={this.state.randomElement}
                     handleClick={this.handleClick}

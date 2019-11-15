@@ -5,8 +5,10 @@
 }
 
 body {
-	background: black;
-	color: whitesmoke;
+	/* background: black;
+	color: whitesmoke; */
+	background: whitesmoke;
+	color: black;
 	font-family: 'Times New Roman';
 	padding: 1em;
 }

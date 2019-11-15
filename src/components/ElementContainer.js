@@ -15,16 +15,7 @@ class ElementContainer extends React.Component {
     }
 
     handleClick() {
-        if (document.body.style.backgroundColor === "white") {
-            document.body.style.backgroundColor = "black"
-            document.body.style.color = "white"
-            console.log(this.state.elements[0])
-        }
-        else {
-            document.body.style.backgroundColor = "white"
-            document.body.style.color = "black"
-            console.log(this.state.elements[1])
-        }
+
     }
 
     generateRandomElement() {
@@ -34,9 +25,10 @@ class ElementContainer extends React.Component {
     render() {
         return (
             <div className="container">
-                <h1>{this.props.greetings}</h1>
-                <Element element={this.state.randomElement} />
-                <button onClick={this.handleClick}>Randomize!</button>
+                <Element 
+                    element={this.state.randomElement}
+                    handleClick={this.handleClick}
+                />
             </div>
         )
     }

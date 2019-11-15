@@ -1,10 +1,12 @@
 import React from "react"
 
+import periodicTable from "../data/periodic_table.json"
+
 class ElementContainer extends React.Component {
     constructor(props) {
         super(props)
         this.state = {
-            elements: null // put in the elements.json file here in state
+            elements: periodicTable.elements
         }
         this.handleClick = this.handleClick.bind(this)
     }
@@ -13,10 +15,12 @@ class ElementContainer extends React.Component {
         if (document.body.style.backgroundColor === "white") {
             document.body.style.backgroundColor = "black"
             document.body.style.color = "white"
+            console.log(this.state.elements[0])
         }
         else {
             document.body.style.backgroundColor = "white"
             document.body.style.color = "black"
+            console.log(this.state.elements[1])
         }
     }
 

@@ -1,6 +1,7 @@
 import React from "react"
 
 import periodicTable from "../data/periodic_table.json"
+import Element from "./Element"
 
 class ElementContainer extends React.Component {
     constructor(props) {
@@ -29,6 +30,7 @@ class ElementContainer extends React.Component {
             <div>
                 <h1>{this.props.greetings}</h1>
                 <button onClick={this.handleClick}>Click me!</button>
+                <Element element={this.state.elements[0]} />
             </div>
         )
     }
